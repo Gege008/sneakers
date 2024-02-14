@@ -12,15 +12,15 @@ def reader():
             split = line.split(",")
             title = split[0]
             color_breif = split[1]
-            fullPrice = split[2]
-            currentPrice = split[3]
+            full_price = float(split[2])
+            current_price = float(split[3])
             publish_date = split[4]
             sneakers.append(
                 {
                     'title': title,
                     'color': color_breif,
-                    'full_price': fullPrice,
-                    'current_price': currentPrice,
+                    'full_price': full_price,
+                    'current_price': current_price,
                     'publish_date': publish_date,
                 }
             )
